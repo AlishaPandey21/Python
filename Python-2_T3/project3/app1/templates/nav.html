@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+</head>
+<body>
+    <nav>
+        <a href="http:/app1" target="_blank" rel="noopener noreferrer">home</a>
+        <!-- <a href="http:/app1/course" target="_blank" rel="noopener noreferrer">Course</a>
+        <a href="http:/app1/about" target="_blank" rel="noopener noreferrer">About</a>
+ -->
+         <a href="{%url 'courses' %}">Course</a>
+         <a href="{%url 'abouts' %}">About</a>
+
+
+
+    </nav>
+    {% block body %}
+
+    {% endblock body %}
+</body>
+</html>
