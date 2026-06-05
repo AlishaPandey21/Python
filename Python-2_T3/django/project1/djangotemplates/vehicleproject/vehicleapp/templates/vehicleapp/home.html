@@ -1,0 +1,17 @@
+{% extends "vehicleapp/base.html" %}
+{% block content %}
+<h1>Welcome {{ user_name }}</h1>
+<h2>{{ title }}</h2>
+<ul>
+{% for vehicle in vehicles  %}
+<li>
+    {{ vehicle.name }}
+    {{ vehicle.price }}
+    {% if vehicle.premium %}
+    Premium Vehicle
+    {% endif %}
+</li>
+
+{% endfor %}
+</ul>
+{% endblock  %}
